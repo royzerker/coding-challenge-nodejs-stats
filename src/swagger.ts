@@ -13,7 +13,7 @@ const options: any = {
 		},
 		servers: [
 			{
-				url: `http://${HOST}:${PORT}`
+				url: `http://${HOST}:${PORT}/api`
 			}
 		]
 	},
