@@ -1,38 +1,38 @@
 {
-  "name": "coding-challenge-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon --watch src --ext ts --exec ts-node src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^1.9.0",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mathjs": "^14.4.0",
-    "nodemon": "^3.1.10",
-    "reflect-metadata": "^0.2.2",
-    "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1",
-    "ts-node-dev": "^2.0.0",
-    "typedi": "^0.10.0",
-    "winston": "^3.17.0"
-  },
-  "devDependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.1",
-    "@types/jsonwebtoken": "^9.0.9",
-    "@types/node": "^22.15.14",
-    "@types/swagger-ui-express": "^4.1.8",
-    "cors": "^2.8.5",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
-  }
+	"name": "coding-challenge-nodejs-stats",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon --watch src --ext ts --exec ts-node src/index.ts",
+		"build": "tsc",
+		"start": "node dist/index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^1.9.0",
+		"dotenv": "^16.5.0",
+		"express": "^5.1.0",
+		"jsonwebtoken": "^9.0.2",
+		"mathjs": "^14.4.0",
+		"nodemon": "^3.1.10",
+		"reflect-metadata": "^0.2.2",
+		"swagger-jsdoc": "^6.2.8",
+		"swagger-ui-express": "^5.0.1",
+		"ts-node-dev": "^2.0.0",
+		"typedi": "^0.10.0",
+		"winston": "^3.17.0"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.17",
+		"@types/express": "^5.0.1",
+		"@types/jsonwebtoken": "^9.0.9",
+		"@types/node": "^22.15.14",
+		"@types/swagger-ui-express": "^4.1.8",
+		"cors": "^2.8.5",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.3"
+	}
 }
