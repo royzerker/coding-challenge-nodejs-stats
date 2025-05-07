@@ -1,0 +1,58 @@
+{
+	"files.exclude": {
+		"**/dist": true,
+		"**/node_modules": true
+	},
+	"npm.packageManager": "yarn",
+	"prettier.requireConfig": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit",
+		"source.fixAll.eslint": "explicit",
+		"source.organizeImports": "explicit"
+	},
+	"files.watcherExclude": {
+		"**/target": true
+	},
+	"[dotenv]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"cSpell.words": [
+		"agregar",
+		"AKIAYKZKNM",
+		"aripay",
+		"ariws",
+		"bson",
+		"endregion",
+		"fastify",
+		"Firstname",
+		"healthcheck",
+		"incluir",
+		"kardex",
+		"Kardex",
+		"Lastname",
+		"mongodb",
+		"MONGODB",
+		"nestjs",
+		"Numeber",
+		"pide",
+		"Representant",
+		"typeorm"
+	],
+	"terminal.integrated.profiles.osx": {
+		"zsh": {
+			"path": "/bin/zsh",
+			"args": ["-l", "-c", "export NVM_DIR=$HOME/.nvm; source $NVM_DIR/nvm.sh; nvm use; exec zsh"]
+		},
+		"bash": {
+			"path": "/bin/bash",
+			"args": ["-l", "-c", "export NVM_DIR=$HOME/.nvm; source $NVM_DIR/nvm.sh; nvm use; exec bash"]
+		},
+		"sh": {
+			"path": "/bin/sh",
+			"args": ["-l", "-c", "export NVM_DIR=$HOME/.nvm; source $NVM_DIR/nvm.sh; nvm use; exec sh"]
+		}
+	}
+}
