@@ -9,21 +9,38 @@ export class StatsService {
 		this.#_logger = logger
 	}
 
-	getStats(matrix: number[][]): { sum: number; average: number } {
+	getStats(matrix: number[][]): { max: number; min: number; avg: number; sum: number; isDiagonal: boolean } {
 		this.#_logger.debug('Calculating stats for matrix:', matrix)
 
-		const flat = matrix.flat()
-		const sum = flat.reduce((acc, val) => acc + val, 0)
-		const average = sum / flat.length
-		return { sum, average }
+		const flattened = matrix.flat()
+
+		const max = Math.max(...flattened)
+		const min = Math.min(...flattened)
+		const avg = flattened.reduce((sum, value) => sum + value, 0) / flattened.length
+		const sum = flattened.reduce((sum, value) => sum + value, 0)
+
+		const isDiagonal = this.#_isDiagonal(matrix)
+
+		return {
+			max,
+			min,
+			avg,
+			sum,
+			isDiagonal
+		}
 	}
 
-	rotateMatrix(matrix: number[][]): number[][] {
-		this.#_logger.debug('Rotating matrix:', matrix)
+	#_isDiagonal(matrix: number[][]): boolean {
+		this.#_logger.debug('Checking if matrix is diagonal:', matrix)
 
 		const n = matrix.length
-		const m = matrix[0].length
-		const rotated = Array.from({ length: m }, (_, i) => matrix.map(row => row[i]).reverse())
-		return rotated
+		for (let i = 0; i < n; i++) {
+			for (let j = 0; j < n; j++) {
+				if (i !== j && matrix[i][j] !== 0) {
+					return false
+				}
+			}
+		}
+		return true
 	}
 }

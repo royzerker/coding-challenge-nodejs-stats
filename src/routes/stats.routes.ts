@@ -33,6 +33,6 @@ const statsController = Container.get(StatsController)
  *       200:
  *         description: Matrix processed successfully
  */
-router.post('/process', (req, res) => statsController.execute(req, res))
+router.post('/stats/process', (req, res) => statsController.getStats(req, res))
 
 export default router
